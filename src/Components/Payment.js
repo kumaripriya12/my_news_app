@@ -18,6 +18,7 @@ class Payment extends Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.onChange = this.onChange.bind(this);
 		this.verifySignature = this.verifySignature.bind(this);
+		this.handleKeyStroke = this.handleKeyStroke.bind(this);
 	}
 
 	componentDidMount() {
@@ -27,6 +28,12 @@ class Payment extends Component {
 		this.setState({
 			[e.target.name] : e.target.value
 		});
+	}
+
+	handleKeyStroke(e){
+		if(e.key == 'Enter'){
+			this.handleSubmit(e);
+		}
 	}
 
 	handleSubmit(event){ 
@@ -59,7 +66,7 @@ class Payment extends Component {
 			      "name": "Merchant Priya",
 			      "description": "Purchase Description",
 			      "image": "",
-			      "order_id": response.data, 
+			      "order_id": "order_F6LPHnEGyk9Oam", 
 			      "handler": function (response){
 			        alert(response.razorpay_payment_id);
 			        alert(response.razorpay_signature);
@@ -138,7 +145,7 @@ class Payment extends Component {
 						    <label for="exampleInputMobile">Mobile</label>
 						    <input type="text" className="form-control" name="mobile" onChange={this.onChange} placeholder="Enter Mobile Number" />
 						  </div>
-						  <button type="submit" className="btn btn-primary">Submit</button>
+						  <button type="submit" className="btn btn-primary" onKeyDown={this.handleKeyStroke}>Submit</button>
 						</form>
 					</div>
 				</div>

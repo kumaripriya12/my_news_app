@@ -9,3 +9,7 @@
 .nav-item {
 	color: #FFFFFF !important;
 }
+
+:focus {
+    outline: 3px solid red;   
+}

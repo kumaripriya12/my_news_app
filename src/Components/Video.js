@@ -29,7 +29,7 @@ class Video extends Component {
 		return (
 			<div>
 				<video width="450" height="300" poster="/images/bhuj.png" controls >
-					<source src="" type="video/mp4"/>
+					<source src="/Videos/Video2.mp4" type="video/mp4"/>
 				</video>
 				<br />
 				<button className="btn btn-primary" type="button" onClick={this.payNowClick}>Pay Now</button>
