@@ -22,7 +22,6 @@ class MainNav extends Component {
 
 	componentDidMount() {
 		this.fetchData()
-    	setInterval(this.fetchData, 30000);
 	}
 
 	async fetchData(){
