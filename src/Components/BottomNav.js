@@ -10,7 +10,7 @@ class BottomNav extends Component {
 		const api_params = [
 		  {id: 1, title: 'India news', url: 'https://newsapi.org/v2/top-headlines?country=in&apiKey=3550598ea63546ec9c5fffbe8c56d531'},
 		  {id: 2, title: 'tech news', url: 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=3550598ea63546ec9c5fffbe8c56d531'},
-		  {id: 3, title: 'India business news', url: 'http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=3550598ea63546ec9c5fffbe8c56d531'},
+		  {id: 3, title: 'India business news', url: 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=3550598ea63546ec9c5fffbe8c56d531'},
 		  {id: 4, title: 'apple release news', url: 'https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=3550598ea63546ec9c5fffbe8c56d531'},
 		];
 
